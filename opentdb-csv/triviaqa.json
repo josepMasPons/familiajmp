@@ -1,0 +1,8 @@
+[
+  {
+    "category": "Ciència",
+    "question": "Quin és l'element químic amb símbol H?",
+    "answer": "Hidrogen",
+    "incorrect_answers": ["Heli", "Oli", "Ouro"]
+  }
+]

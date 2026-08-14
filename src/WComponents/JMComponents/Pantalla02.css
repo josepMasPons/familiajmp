@@ -1,0 +1,44 @@
+.BtablaP2 {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-responsiveP2{
+    max-height: 200px; /* Límit d'alçada per activar scroll */
+    overflow-y: auto; /* Permet scroll vertical */
+    overflow-x: hidden; /* Permet scroll horitzontal */
+    border: 1px solid #ccc; /* Marc al voltant per millor visualització */
+    padding: 5px;
+}
+.BTablaP2-temp  {
+ width: 8px;
+ } 
+ .BTablaP2-nom  {
+ width: 120px;
+ } 
+.BTablaP2-nomz  {
+ width: 200px;
+ } 
+.BTablaP2-nom0  {
+ width: 8px;
+ } 
+.BTablaP2-nom1  {
+ width: 30px;
+ }
+ .BTablaP2-nom2  {
+ width: 120px;
+ }
+ .BTablaP2-nom3  {
+ width: 200px;
+ } 
+.BtablaP2 th, .BtablaP2 td {
+    border: 2px solid #ddd; /* Afegeix una quadricula */
+    padding: 2px;
+    text-align: left;
+}
+.BtablaP2 thead {
+    background-color: #f8f9fa; /* Fons clar per destacar les capçaleres */
+    font-weight: bold;
+}
+.BtablaP2 tbody tr:hover {
+    background-color: #f1f1f1; /* Canvi de color en passar per sobre */
+}

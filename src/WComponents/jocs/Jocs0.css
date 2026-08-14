@@ -1,0 +1,138 @@
+.J0nomP {
+    text-align: center;
+    margin:auto; 
+ }
+  .J0P01 {
+    clear: initial;
+    text-align: center;
+    width: 100%;
+    max-width: 600px; /* Amplada màxima per a tauletes i ordinadors */
+    height:725px;
+    padding: 14px;
+    background-color: #99c9ff; 
+    border-radius: 20px;
+    border: 5px solid white;
+    text-align: center; /* Centra l'element horitzontalment */
+    margin:auto;
+  }
+  
+  .J0P01-logo {
+    width: 30%; /* Assegura que la imatge ocupi tot l'ample del seu contenidor */
+    height: auto; /* Manté l'escala de la imatge */
+    max-height: 50vh; /* Màxima alçada per prevenir desbordament */
+    border-radius: 5px;
+  }
+  .J0P01-header {
+      height:680px;
+      background-color: #bbbdc1;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: calc(10px + 2vmin);
+      color: white;
+      padding: 10px; /* Incrementa l'espai interior */
+    } 
+    .J0P01-link {   
+      font-size: calc(22px);
+      color: black;
+    }
+    .J0P01-link2a {   
+      font-size: calc(15px);
+      color: black;
+      padding: 0px 0px 0px 0px;
+      margin:  5px 0px 0px 5px;
+      font-weight: bold; 
+    }
+     .J0P01-link2aa {   
+      font-size: calc(15px);
+      color: black;
+      padding: 0px 0px 0px 0px;
+      margin:  0px 0px 0px 0px;
+      font-weight: bold; 
+    }
+    .J0P01-link2b {   
+      font-size: calc(10px);
+      color: rgb(17, 56, 87);  
+      padding: 0px 0px 0px 18px;  
+      margin: 0px  0px 0px 18px;
+    }
+    .J0P01-link3 {   
+      font-size: calc(10px);
+      color: black;
+      margin: 5px  5px 5px 5px;
+    }
+  .J0P01-buto {
+      font-size: calc(15px);
+      margin-top: 10px;    
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      padding: 3px 3px 3px 3px;
+      margin:  3px 3px 3px 3px
+      ;    
+  }
+
+.J0button-with-logo {  
+  width: 180px;
+  height:50px; 
+  padding: 5px 5px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin: 5px  5px 5px 5px;
+}
+
+.J0logo {
+  width: 30px;  
+  height: 30px;  
+  margin-right: 10px;
+}
+
+.J0button-text {
+  font-size: 16px;
+}
+
+.J0button-with-logo:hover {
+  background-color: #0056b3;  
+}
+.watermark-container {
+  position: relative; /* Necessari per a posicionar correctament el text */
+  display: inline-block; /* Adapta l’amplada al contingut */
+}
+
+.watermark-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.15); /* Transparent suau */
+  pointer-events: none; /* No bloqueja clics al botó */
+  white-space: nowrap;
+  z-index: 10; /* Assegura que es mostri per sobre del contingut */
+}
+.boto-construccioz {
+  position: relative; /* Important per al posicionament intern */
+  overflow: hidden; /* Evita que la marca surti del botó */
+}
+
+.boto-construccio {
+  content: "En construcció";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.15); /* Semitransparent */
+  pointer-events: none; /* No bloqueja el clic */
+  white-space: nowrap;
+  z-index: 5;
+}

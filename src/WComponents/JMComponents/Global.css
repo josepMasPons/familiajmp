@@ -1,0 +1,870 @@
+/* ---  Genèric per tots         -------------  */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /*height: 100vh;*/
+} 
+/*
+  html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+} */
+/*
+.container, .navbar, .row {
+    max-width: 100% !important;
+    overflow-x: hidden;
+    padding-left: 0;
+    padding-right: 0;
+}
+    */
+    /*
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.card {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+*/
+/* --- Ajustaments per a dispositius mòbils --- */
+@media (max-width: 768px) {
+  .main-contentHE {
+      margin-top: 80px; /* Ajusta segons l'altura de la teva navbar */
+  }
+
+  .main-contentLO {
+      padding-top: 0px; /* Ajusta segons l'altura de la teva navbar */
+  }
+
+  .SVNavbarHE, .SVNavbarLO {
+      padding: 12px 0;
+  }
+
+  .SVNavbarHE .navbar-collapse {
+      max-height: 100vh; /* Permet que el menú col·lapsi i no es sobreposi */
+  }
+
+  /* Ajusta l'espai per als enllaços de navegació per evitar desbordaments */
+  .navbar-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navbar-nav .nav-link {
+      padding: 8px 16px;
+      font-size: 14px;
+  }
+}
+
+/* ---  JMHeader.js    (Final HE) -------------  */
+.main-contentHE {
+    margin-top: 140px;
+    padding-top: 20px; 
+  }
+ 
+.center-contentHE {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Si vols centrar verticalment */
+    height: 100vh;
+    /*height: calc(100vh - 60px);*/ 
+    /*margin: 0px;*/
+    /*padding-top: 60px;*/
+    /*height: auto;*/
+  }
+  .brand-title3HE {
+    font-size: 14px;
+    font-weight: bold;     
+    color: #666; 
+    display: block;
+    margin-left: 0;
+    text-align:left;
+  }
+.brand-titleHE {
+    font-size: 20px;
+    font-weight: bold;
+    color: #343a40;
+    text-align: center;
+    display: inline-block;
+    margin-left: 50px;
+  } 
+.small-textHE {
+    font-size: 12px;
+  }
+  
+.SVNavbarHE {
+    width: 100%;
+    padding: 8px 0;
+    background-color: #f8f9fa;
+   /* position: fixed;*/
+   /*top: 0;*/
+   /*left: 0; */
+   /*z-index: 1000; */
+
+ }
+
+/* ---  JMLogin.js    (Final LO) ---------------  */
+.SVNavbarLO {
+  width: 100%;
+  padding: 8px 0;
+  background-color: #f8f9fa;
+  position: relative;
+  /*  justify-content: center;*/      
+  /*  margin-top: 60px;*/
+}
+
+  .center-contentLO {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: flex;*/
+    /*   align-items: center;*/
+     /* flex-direction: column;*/
+     /* height: 100vh;*/
+  }
+  .brand-titleLO {
+      font-size: 1.0rem;
+      font-weight: bold;
+      color: #343a40;
+      text-align: center;
+      display: block;
+      margin-left: 0;
+    }
+  
+  .brand-titleLO2 {
+    font-size: .8rem;
+    font-weight: bold;
+    color: #6c757d;
+    display: block;
+    margin-left: 0;
+    text-align:left;
+  }  
+  .logoLO {
+    width: 150px;
+    max-width: 100%;
+    max-height: 50vh;
+    height:100px ;
+    object-fit: cover;
+    display: block;
+    border-radius: 7px;
+    box-sizing: border-box;
+  }
+  .small-buttonLO {
+    font-size: 20px; 
+    padding: 4px 8px; 
+    height: 30px;  
+    line-height: 1;
+  }
+  .image-text-containerLO {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin: 0 4px;   
+    gap: 2px; 
+
+  }
+    
+/* ---  Pantalla02.jsx  i 02B  (Final P2) ---------------  */ 
+.SVNavbarP2 {
+    background-color: #f8f9fa;
+    margin-left: 50px;
+    margin-right: 50px;    
+  }
+.center-contentP2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.nav-link.border:hover {
+    background-color: #cddceb; 
+    }
+.BtablaP2 {
+    width: 100%;
+    border-collapse: collapse;
+}
+.BTablaP2-nomz  {
+ width: 200px;
+ } 
+.BTablaP2-nom0  {
+ width: 8px;
+ } 
+.BTablaP2-nom1  {
+ width: 30px;
+ }
+ .BTablaP2-nom2  {
+ width: 120px;
+ }
+ .BTablaP2-nom3  {
+ width: 200px;
+ } 
+.BtablaP2 th, .BtablaP2 td {
+    border: 2px solid #ddd; /* Afegeix una quadricula */
+    padding: 2px;
+    text-align: left;
+}
+.BtablaP2 thead {
+    background-color: #f8f9fa; /* Fons clar per destacar les capçaleres */
+    font-weight: bold;
+}
+.BtablaP2 tbody tr:hover {
+    background-color: #f1f1f1; /* Canvi de color en passar per sobre */
+}
+    
+    /* Permet desplaçar la taula amb el ratolí */
+.table-responsiveP2{
+    max-height: 350px; /* Límit d'alçada per activar scroll */
+    overflow-y: auto; /* Permet scroll vertical */
+    overflow-x: hidden; /* Permet scroll horitzontal */
+    border: 1px solid #ccc; /* Marc al voltant per millor visualització */
+    padding: 5px;
+}
+.custom-logout-btn {
+      background: linear-gradient(135deg, #585959, #003c80);
+      border: none;
+      color: white;
+      font-size: 18px;
+      padding: 12px 24px;
+      border-radius: 4px;
+      transition: all 0.3s ease-in-out;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+}
+.custom-logout-btn:hover {
+    background: linear-gradient(135deg, #004494, #002f66);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+.custom-logout-btn i {
+    font-size: 20px;
+}
+.small-buttonP2 {
+    font-size: 20px; /* Redueix la mida del text */
+    padding: 4px 8px; /* Redueix els espais interns */
+    height: 30px; /* Fa que el botó sigui més baix */
+    line-height: 1;
+}
+/* ---  Pantalla03.jsx    (Final P3) ---------------  */ 
+  .nom-text3xP3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    /* width: 150px;   Amplada fixa per als títols */
+    text-align: left;  
+    display: flex;
+    align-items: center; /* Alinea verticalment */  
+  }  
+.small-textP3 {
+    font-size: 12px; /* Ajusta la mida segons necessitis */
+    padding: 2px 2px 2px 2px; /* Ajusta els marges interns */
+    position: relative;
+    top: -2px;
+    margin-left: 2px;
+}
+  .small-buttonP3 {
+    /*font-size: 20px;  Redueix la mida del text */
+    /*padding: 4px 8px;  Redueix els espais interns */
+    height: 30px; /* Fa que el botó sigui més baix */
+    line-height: 1;
+}
+.nom-text3xP3 span {
+    flex: 1; /* Permet que tots els valors quedin alineats */
+}
+.nom-text3xP3:before {
+    content: attr(data-label); /* Mostra el text abans */
+    display: inline-block;
+    min-width: 100px; /* Amplada fixa per alinear els noms */
+    font-weight: bold;
+}
+.center-contentP3 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}  
+.cap303P3 {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;   
+    width: 100%;
+    max-width: 500px; /* Ajusta segons el teu disseny */
+    margin-top: 5px !important; /* Redueix l'espai superior */
+    margin-bottom: 5px !important; /* Si cal, ajusta l'espai inferior */
+  
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Redueix espai entre línies */
+}  
+.cap3031P3 {
+        background-color: #f9f9f9;
+        padding: 4px;   
+        margin-top: 0px !important; /* Redueix l'espai superior */
+        margin-bottom: 1px !important; /* Si cal, ajusta l'espai inferior */
+        display:flex;  
+        flex-wrap: wrap;
+        flex-direction: row;  
+        justify-content: space-between;   
+        background-color: #d3d3d3;
+        border-radius: 5px;
+        border: 4px solid rgb(25, 25, 26); 
+        margin: 1px; 
+       /*border: 4px solid rgb(25, 25, 26);*/ 
+        margin: 10px; 
+}
+.Separa-cams1P3 {
+        flex: 1;
+        padding: 2px 8px;
+        background-color: #eef2f7;
+        border-radius: 4px;
+        font-size: 13px;
+        font-weight: normal;
+        color: black; 
+        text-align: left;
+}
+/* ---  Pantalla04.jsx    (Final P4) ---------------  */  
+
+.M4TextP4 {  
+     
+    width: 100%;
+    max-width: 400px; 
+    height: auto;
+    padding: 10px; 
+    border-radius: 5px;
+    border: 3px solid rgb(0, 0, 0);
+    font-weight: bold; 
+    color: black;
+    font-size:medium;
+    text-align: center; 
+    margin: auto;
+}
+.small-buttonP4 {
+    font-size: 20px; 
+    padding: 4px 8px; 
+    height: 30px;  
+    line-height: 1;
+}
+.M4P4  {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: ease; 
+    width: 400px; 
+    max-width: 800px;
+    height: auto; 
+    margin: auto;
+    padding: 0 10px;
+}   
+
+/* ---  Pantalla05.jsx    (Final P5) ---------------  */  
+.center-contentP5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   /* padding-top: 10px;*/
+ }  
+
+ .Vvideo-containerP5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 300px); /* Alçada de la pantalla menys l'alçada de la navbar */
+    overflow: hidden;
+  }
+  
+.Vreact-playerP5 {
+    width: 100%;
+    max-width: 800px; /* Amplada màxima del vídeo */
+    aspect-ratio: 16/9; /* Relació d'aspecte del vídeo */
+}
+.small-buttonP5 {
+    font-size: 20px; /* Redueix la mida del text */
+    padding: 4px 8px; /* Redueix els espais interns */
+    height: 30px; /* Fa que el botó sigui més baix */
+    line-height: 1;
+}  
+  
+/* ---  Pantalla06.jsx    (Final P6) ---------------  */  
+.M4TextP6 {  
+     
+  width: 100%;
+  max-width: 400px; 
+  height: auto;
+  padding: 10px; 
+  border-radius: 5px;
+  border: 3px solid rgb(0, 0, 0);
+  font-weight: bold; 
+  color: black;
+  font-size:medium;
+  text-align: center; 
+  margin: auto;
+}
+
+.center-contentP6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+   /* padding-top: 10px;*/
+}  
+.small-buttonP6 {
+    font-size: 20px; /* Redueix la mida del text */
+    padding: 4px 8px; /* Redueix els espais interns */
+    height: 30px; /* Fa que el botó sigui més baix */
+    line-height: 1;
+}
+.imatge-a-pantalla-completaP6 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Per mantenir l'aspect ratio de la imatge */
+    z-index: 9999; /* Assegura que la imatge estigui a la part superior */
+    background-color: rgba(0, 0, 0, 0.9); /* Fons semitransparent per millorar la visibilitat */
+}
+.pdf-containerP6 {
+  /*display: flex;*/
+  /*justify-content: center;  Centra horitzontalment */
+  /* align-items: center;      Centra verticalment */
+  /*overflow: auto;           Permet el desplaçament si el contingut és més gran */
+  height: 55vh;           /* Ocupa  l'alçada de la vista */
+  width: 85%;             /* Ocupa tot l'ample disponible */
+}
+
+.pdf-iframeP6 {
+  width: 400%;             /* S'adapta a l'amplada del contenidor */
+  height: 80vh;            /* Altura adaptada per evitar que sigui massa alta */
+  border: none;            /* Elimina el bord de l'iframe */
+  object-fit: contain;     /* Ajusta el contingut per no deformar-lo */
+}
+.M4P6  {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: ease; 
+  width: 400px; 
+  max-width: 800px;
+  height: auto; 
+  margin: auto;
+  padding: 0 10px;
+}   
+
+  /* ---  Verificacio.jsx    (Final VE) ---------------  */  
+  .ImP02VE {
+    clear: initial;  
+    text-align: center;    
+    width: 900px;
+    height: auto;
+    padding: 10px;
+    background-color: #45e7da;
+    border-radius: 20px;
+    border: 5px solid white;
+    margin:0 auto;
+  }
+  .ImP02-headerVE {
+    /*height: 680px;*/ 
+    background-color: #bbbdc1; 
+    border-radius: 20px;   
+    /*font-size: calc(10px + 2vmin);*/
+    color: white;
+    padding: 10px;
+  }
+.ImP02-linkVE {   
+    font-size: calc(30px);
+    color: black;
+  }
+.ImP02-cap1VE {  
+    font-size: calc(15px);
+    color: black;
+}
+.ImP02-cap2VE {  
+    font-size: calc(20px);
+    color: rgb(240, 20, 20);
+    padding: 0px 0px 0px 0px;
+    margin:  0px 0px 5px 0px;
+  }
+
+.ImP02-cap3VE {  
+    border-radius: 10px;   
+}
+.ImP02-cap0VE {
+    padding: 0px 0px 0px 0px;
+    margin:  5px 5px 5px 5px;  
+}
+
+.ImP02-capGVE {
+    max-height: 270px; /* Alçada màxima del contenidor */    
+    overflow-y:scroll; /* Habilita el desplaçament vertical */
+    
+}
+.ImP02-butoVE {
+    margin-top: 5px;    
+    background-color: #007bff;
+    color: #fff;
+    border: none;     
+    cursor: pointer;
+    padding: 5px;
+    margin:  5px;
+    border-radius: 10px;  
+    font-size: 12px;  
+}
+.impbutonsVE {
+    display: inline-block;
+    margin: 5px; 
+    
+}
+.ImP02-link3VE {
+
+    width: 300px;
+    height: 100;
+    padding: 10px;
+    border: 5px solid white;
+    background-color: rgb(176, 176, 156);  
+    color: green;  
+    padding: 8px;  
+    border-radius: 5px;  
+    text-decoration: none;  
+    font-weight: bold;        
+    font-family: Arial, sans-serif;
+    font-size: 15px; 
+    text-align: left; 
+  }
+/* ---  Visites.jsx    (Final VI) ---------------  */ 
+.SVNavbarVI {
+  margin-top: 0; /* Ajusta el marge superior a 0 per enganxar-lo a dalt */
+  padding-top: 5px; /* Si vols un petit marge superior */
+ }
+ .brand-title3VI {
+  font-size: 14px;
+  font-weight: bold;     
+  color: #666; 
+  display: block;
+  margin-left: 0;
+  text-align:left;
+}
+.table-responsiveVI{
+  max-height: 400px; /* Límit d'alçada per activar scroll */
+  overflow-y: auto; /* Permet scroll vertical */
+  overflow-x: hidden; /* Permet scroll horitzontal */
+  border: 1px solid #ccc; /* Marc al voltant per millor visualització */
+  padding: 5px;
+}
+.BtablaVI {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+
+.P03-lin1MA {
+  text-align: left;
+  font-size:small;
+  margin: 5px;
+  font-weight: bold;
+}
+
+  @media (max-width: 768px) {
+    .P03-capMA {
+        padding: 5px;
+    }
+  
+    .P03-lin1MA{
+        font-size: medium; 
+    }
+  }  
+.contenidor-flexMA {
+  display: flex;        /* Flexbox layout */
+  align-items: center;  /* Alinea els elements verticalment al centre */
+  justify-content: flex-start;  /* Alinea els elements a l'inici (esquerra) */
+  gap: 10px;            /* Espai entre els elements (nom i textarea) */
+}
+
+.Icustom-textareaMA {
+  width: 100%; /* Ample del 100% del contenidor, però amb un màxim */
+  max-width: 400px;  /* L'ample màxim en pantalles grans */
+  background-color: #e8e5e5;     
+  border-radius: 1px; 
+  font-size: 12px;  
+  resize: vertical;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-right: 10px; /* Espaiat dret */
+  position: relative;
+  margin-left: -175px;
+}
+.Icustom-textarea1MA {
+  width: 100%; /* Ample del 100% del contenidor, però amb un màxim */
+  max-width: 400px;  /* L'ample màxim en pantalles grans */
+  background-color: #e8e5e5;     
+  border-radius: 1px; 
+  font-size: 12px;  
+  resize: vertical;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-right: 10px; /* Espaiat dret */
+  position: relative;
+  margin-left: -175px;
+
+}
+
+.nom-textMA {
+  font-size: 14px;  /* Mida de la font per al nom */
+  font-weight: bold; /* Text en negreta */
+  width: 400px;
+  /*padding: 20px; */ 
+}
+.nom-text2m1MA {
+  font-size: 14px;  /* Mida de la font per al nom */
+  font-weight: bold; /* Text en negreta */
+  width: 400px;
+  /*margin-right: -125px;*/
+  /*padding: 20px; */ 
+}
+
+.nom-textcapMA {
+  font-size: 14px;  /* Mida de la font per al nom */
+  font-weight: bold; /* Text en negreta */
+  width: 390px;
+}
+
+/* Media query per mòbils */
+
+/* Media query per mòbils i pantalles petites */
+@media (max-width: 768px) {
+    .Icustom-textareaMA {
+        width: 90%; /* Ample del 90% per a pantalles petites */
+        font-size: 10px; /* Lletres lleugerament més petites en mòbils */
+        right: 0; /* Elimina el desplaçament */
+        margin-right: auto; /* Elimina margin per centrat */
+        margin-left: auto;  /* Centrat en mòbils també */
+    }
+}
+.custom-modal .modal-dialog {
+   
+  max-width: 90%; /* Ajusta l'ample del modal */
+  margin: 1rem auto; /* Marges laterals */
+}
+
+@media (min-width: 768px) {
+  .custom-modal .modal-dialog {
+    max-width: 500px; /* Més ample per a pantalles més grans */
+  }
+}
+
+@media (max-width: 576px) {
+  .responsive-modal .modal-dialog {
+    max-width: 100%; /* Ocupa tot l'ample en mòbils petits */
+    padding: 0.5rem; /* Evita que el contingut estigui enganxat als marges */
+  }
+}
+.small-buttonxMA {
+  font-size: 20px; /* Redueix la mida del text */
+  padding: 4px 8px; /* Redueix els espais interns */
+  height: 30px; /* Fa que el botó sigui més baix */
+  line-height: 1;
+}
+.boto-containerMA {
+  display: flex;
+  gap: 10px; /* Ajusta la separació entre botons */
+}
+.text-petit-vermellMA {
+  font-size: 11px; /* Mida petita */
+  color: red; /* Color vermell */
+  font-weight: bold; 
+}
+.recuadre-textMA {
+  border: 1px solid red;  /* Requadre vermell */
+  padding: 8px;           /* Espai intern per no quedar enganxat */
+  background-color: #ffe6e6; /* Lleuger fons vermell clar (opcional) */
+  display: inline-block;  /* Perquè s'ajusti al contingut */
+  line-height: 1.2;       /* Reduir espai entre línies */
+}  
+/* ---  JMAltKey.jsx    (Final AK) ---------------  */
+
+.P03-cap2AK  {  
+  display:flex;  
+  flex-wrap: wrap;
+  flex-direction: row;  
+  justify-content: space-between;  
+  background-color: #d3d3d3;
+  border-radius: 5px;
+  border: 4px solid rgb(25, 25, 26); 
+  margin: 10px;  
+}
+.P03-lin1AK {
+  text-align: left;
+  font-size:small;
+  margin: 5px;
+  font-weight: bold;
+}
+.P03-lin1AK {
+  font-size: medium;
+}
+.inventari-requadreAK {
+    margin-left: 15%; 
+    display: flex;          /*   Activa flexbox */
+    justify-content: center; /* Centra horitzontalment */
+    align-items: center;     /* Centra verticalment si cal */
+    width: 50%;             /* Fa que ocupi tot l'ample */
+    text-align: center;      /* Centra el text */
+    padding: 10px;           /* Espai interior per millorar l'estètica */
+    background-color: #f8f9fa; /* Color de fons suau (opcional) */
+    border-radius: 8px;      /* Cantonades arrodonides */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Ombra suau */
+  }
+
+.small-buttonAK {
+  font-size: 15px; /* Redueix la mida del text */
+  padding: 4px 8px; /* Redueix els espais interns */
+  height: 30px; /* Fa que el botó sigui més baix */
+  line-height: 1;
+}
+.menys-espaiAK {  
+    padding-top: 0.5rem;  /* Redueix l'espai interior superior */
+    margin-top: -25px;   /* Redueix la separació amb l'element anterior */
+  
+}
+.Icustom-radiosAK {
+  display: flex;
+  gap: 15px; /* Ajusta l'espai entre els elements */
+  align-items: center; /* Centra verticalment */
+}
+.nom-text-radiosAK {
+  font-size: 14px;  /* Mida de la font per al nom */
+  font-weight: bold; /* Text en negreta */
+  width: 150px;
+}
+.nom-text-radiosAP {
+  font-size: 14px;  /* Mida de la font per al nom */
+  font-weight: bold; /* Text en negreta */
+  width: 250px;
+}
+.contenidor-flexAK {
+  display: flex;        /* Flexbox layout */
+  align-items: center;  /* Alinea els elements verticalment al centre */
+  justify-content: flex-start;  /* Alinea els elements a l'inici (esquerra) */
+  gap: 10px;            /* Espai entre els elements (nom i textarea) */
+}
+.contenidor-flex-radiosAK {
+  display: flex;
+  /*flex-direction: column; */
+  gap: 8px; /* Espai entre els elements */
+  margin-bottom: 15px; /* Espai entre cada bloc de pregunta */
+  align-items: center;  /* Alinea els elements verticalment al centre */
+  justify-content: flex-start;  /* Alinea els elements a l'inici (esquerra) */
+ }
+ .contenidor-principalK {
+  display: flex;
+  flex-direction: column; /* Col·loca els elements en una columna */
+  gap: 2px; /* Espai entre cada apartat */
+}
+.Icustom-textareaAK {
+  width: 100%; /* Ample del 100% del contenidor, però amb un màxim */
+  max-width: 400px;  /* L'ample màxim en pantalles grans */
+  background-color: #e8e5e5;     
+  border-radius: 1px; 
+  font-size: 12px;  
+  resize: vertical;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-right: 10px; /* Espaiat dret */
+  position: relative;
+}  
+.Icustom-textareaAP {
+  width: 100%; /* Ample del 100% del contenidor, però amb un màxim */
+  max-width: 400px;  /* L'ample màxim en pantalles grans */
+  background-color: #e8e5e5;     
+  border-radius: 1px; 
+  font-size: 12px;  
+  resize: vertical;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-right: 10px; /* Espaiat dret */
+  position: relative;
+}  
+/* ---  Verificacio.jsx    (Final VE) ---------------  */  
+form label {
+  font-weight: 500;
+}
+.custom-btn-mini {
+  font-size: 0.75rem;      /* lletra més petita */
+  padding: 2px 8px;        /* menys espai intern */
+  border-radius: 4px;      /* cantonades més suaus */
+  min-width: 80px;
+}
+
+/* Global */
+.M4thumbnail-containerP4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  justify-items: center;
+}
+
+.M4thumbnail-imageP4 {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.M4thumbnail-imageP4:hover {
+  transform: scale(1.05);
+}
+
+.carrousel-imatgeP4 {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.imatge-a-pantalla-completaP4 {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+/* Carousel controls */
+.carousel-control-prev, .carousel-control-next {
+  filter: invert(100%) sepia(100%) saturate(10) hue-rotate(160deg);
+  transition: filter 0.3s ease;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  filter: invert(100%) sepia(100%) saturate(100) hue-rotate(160deg);
+}
+.P02B_map-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  width: 140px;        /* ajusta segons necessitis */
+  border-radius: 12px;
+}
+
+.P02B_map-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 6px;
+}
+
+.P02B_map-text {
+  font-size: 0.75rem;
+  color: #555;
+}
+

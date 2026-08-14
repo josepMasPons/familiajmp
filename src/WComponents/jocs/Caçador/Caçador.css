@@ -1,0 +1,70 @@
+/* Estils generals */
+
+.capsalera {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Tauler de joc */
+.pantalla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #d3d3d3;
+  box-sizing: border-box;
+}
+
+/* Caixeta del tauler (dimensions del tauler de joc) */
+.pantalla > div {
+  position: relative;
+  width: 600px;
+  height: 500px;
+  border: 5px solid #000;
+  box-sizing: border-box;
+}
+
+/* Obstacles */
+.obstacle {
+  position: absolute;
+  background-color: brown;
+  z-index: 1;
+  border: 2px solid black;
+}
+
+/* Superheroi */
+.superheroi {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  z-index: 2;
+  transition: left 0.1s, top 0.1s;
+}
+
+/* Caçador */
+.hunter {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  z-index: 3;
+  transition: left 0.1s, top 0.1s;
+  pointer-events: none; /* Impedeix que el caçador sigui seleccionat o faci clic */
+}
+
+/* Imatges dins dels elements */
+.superheroi img,
+.hunter img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Alguns ajustos extra per als colors del tauler */
+.pantalla > div {
+  border-top: 5px solid red;
+  border-right: 5px solid blue;
+  border-bottom: 5px solid green;
+  border-left: 5px solid yellow;
+}

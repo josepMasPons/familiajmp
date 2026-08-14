@@ -1,0 +1,44 @@
+.P5center-contentP5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   /* padding-top: 10px;*/
+ }  
+ .P5M4thumbnail-containerP4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  justify-items: center;
+}
+.P5M4thumbnail-itemP4 {
+ 
+  justify-items: center;
+}
+.P5M4thumbnail-imageP4 {
+  width: 70%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.P5M4thumbnail-imageP4:hover {
+  transform: scale(1.05);
+}
+.P5M4thumbnail-titleP4 {
+   justify-items: center;
+}
+.P5Vvideo-containerP5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 300px); /* Alçada de la pantalla menys l'alçada de la navbar */
+    overflow: hidden;
+  }
+.P5Vreact-playerP5 {
+    width: 100%;
+    max-width: 800px; /* Amplada màxima del vídeo */
+    aspect-ratio: 16/9; /* Relació d'aspecte del vídeo */
+}

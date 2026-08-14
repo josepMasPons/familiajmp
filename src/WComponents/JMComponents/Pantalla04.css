@@ -1,0 +1,203 @@
+/* ──────────────── Contenidor grid responsiu ──────────────── */
+.M4thumbnail-containerP4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); /* miniatures més petites */
+  gap: 6px; /* menys espai entre fotos */
+  justify-items: center;
+  padding: 6px;
+}
+
+/* Marc per a cada miniatura */
+.M4thumbnail-wrapperP4 {
+  width: 110px;
+  height: 110px;
+  overflow: hidden;
+  border-radius: 6px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* ──────────────── Imatges ──────────────── */
+.M4thumbnail-imageP4.horizontal {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: white;
+}
+
+.M4thumbnail-imageP4.vertical {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #f5f5f5; /* franges grises per verticals */
+}
+
+.M4thumbnail-imageP4:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* ──────────────── Responsiu ──────────────── */
+/* Pantalles mitjanes: més espai per fila */
+@media (max-width: 992px) {
+  .M4thumbnail-containerP4 {
+    grid-template-columns: repeat(auto-fill, minmax(95px, 1fr));
+    gap: 5px;
+  }
+
+  .M4thumbnail-wrapperP4 {
+    width: 95px;
+    height: 95px;
+  }
+}
+
+/* Pantalles petites (mòbils): encara més petites */
+@media (max-width: 600px) {
+  .M4thumbnail-containerP4 {
+    grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
+    gap: 4px;
+  }
+
+  .M4thumbnail-wrapperP4 {
+    width: 85px;
+    height: 85px;
+  }
+}
+/* ──────────────── Fletxes del carrusel més visibles (vermelles) ──────────────── */
+
+/* Icones base del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(255, 0, 0, 0.9); /* vermell fort amb una mica de transparència */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-size: 70% 70%;
+  filter: invert(100%) brightness(2) contrast(100%); /* fa que la fletxa interior sigui blanca */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  opacity: 1; /* assegura que sempre es vegin */
+}
+
+/* En passar el ratolí, més intens */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(220, 0, 0, 1);
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Amplia la zona clicable */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 8%;
+}
+
+/* Opcional: canvia el cursor */
+.carousel-control-prev,
+.carousel-control-next {
+  cursor: pointer;
+}
+
+.M4P4x {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  padding: 10px;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.M4P4x img {
+  width: 100%;
+  max-width: 140px;  /* ajusta aquí la mida */
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+.M4TextP4x {  
+     
+    width: 100%;
+    max-width: 400px; 
+    height: auto;
+    padding: 10px; 
+    border-radius: 5px;
+    border: 3px solid rgb(0, 0, 0);
+    font-weight: bold; 
+    color: black;
+    font-size:medium;
+    text-align: center; 
+    margin: auto;
+}
+.M4P4y {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 0 10px;
+  position: relative;
+}
+.M4TextP4z {       
+    width: 70%;
+    max-width: 400px; 
+    height: auto;
+    padding: 10px; 
+    border-radius: 5px;
+    border: 3px solid rgb(0, 0, 0);
+    font-weight: bold; 
+    color: black;
+    font-size:medium;
+    text-align: center; 
+    margin: auto;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-image {
+  max-width: 100%;
+  max-height: 70vh;   /* <-- CLAU PER A VERTICALS */
+  object-fit: contain; /* <-- NO retalla, l’adapta */
+  border-radius: 8px;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgb(255, 255, 255);
+  color: black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  cursor: pointer;
+  border: 5px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  user-select: none;
+}
+
+.carousel-arrow.prev {
+  left: 10px;
+}
+
+.carousel-arrow.next {
+  right: 10px;
+}
+
+.carousel-arrow:hover {
+  background: #f1f1f1;
+}
+

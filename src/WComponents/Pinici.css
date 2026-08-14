@@ -1,0 +1,271 @@
+.PnomP {
+    text-align: center;
+    margin:auto;
+ }
+ .custom-toggle {
+  border: 2px solid #615a5a !important;
+  border-radius: 3px;
+  background: rgba(222, 216, 216, 0.896);
+  padding: 2px 3px;
+  transition: all 0.2s ease;
+}
+
+.custom-toggle:hover {
+  background: #f1f1f1;
+  border-color: #000;
+}
+.PP01 {
+    clear: initial;
+    text-align: center;
+    width: 100%; 
+    max-width: 400px; 
+    padding: 5px;
+    background-color: #99c9ff; 
+    border-radius: 5px;
+    border: 5px solid white;
+    text-align: center;
+    margin:auto;
+    min-height: 250px;   /* mínim */
+    height: auto;        /* creix automàticament */
+  }  
+.PP01-logo {
+    width: 30%; 
+    height: auto; 
+    max-height: 30vh; 
+    border-radius: 5px;
+  }
+.PP01-header1 {
+      height: auto;   
+     
+      background-color: #bbbdc1;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      justify-content: flex-start;
+      font-size: calc(10px + 2vmin);
+      color: white;
+      padding: 1ch;
+    
+    } 
+    .PP01-header2 {
+      height:175px;
+      background-color: #dfe1e4;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: calc(10px + 2vmin);
+      color: white;
+      margin: 1px;
+    } 
+.PP01-header3 {
+   
+      background-color: #bbbdc1;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: calc(10px + 2vmin);
+      color: white;
+      padding: 5px; 
+      min-height: 100px;   /* mínim */
+      height: auto;    
+    } 
+ .PP01-header4 {
+      height:120px;
+      background-color: #dfe1e4;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: calc(10px + 2vmin);
+      color: white;
+      margin: 5px;
+    } 
+.PP01-link {   
+      font-size: calc(30px);
+      color: black;
+    }
+.PP01-link2a {   
+      font-size: calc(30px);
+      color: black;
+      padding: 0px 0px 0px 0px;
+      margin:  0px 0px 5px 0px;
+      font-weight: bold; 
+      margin-top: 0;   
+    }
+.PP01-link2b {   
+      font-size: calc(10px);
+      color: rgb(17, 56, 87);  
+      padding: 0px 0px 0px 5px;  
+      margin: 0px  0px 0px 4px;
+    }
+.PP01-link2c {   
+      font-size: calc(12px);
+      color: rgb(17, 56, 87);  
+      padding: 0px 0px 0px 5px;  
+      margin: 4px  4px 4px 4px;
+      font-weight: bold; 
+}
+.PP01-link2f {   
+      font-size: calc(13px);
+      color: rgb(17, 56, 87);  
+      padding: 0px 0px 0px 5px;  
+      margin: 0px  0px 0px 0cqmin;
+      font-weight: bold; 
+}
+.PP01-link2cc {   
+      font-size: calc(10px);
+      color: rgb(17, 56, 87);  
+      padding: 0px 0px 0px 5px;  
+      margin: 1px  1px 1px 1px;
+      font-weight: bold; 
+     }
+.PP01-link2x {   
+      font-size: calc(16px);
+      color: rgb(17, 56, 87);  
+      padding: 0px 0px 0px 5px;  
+      margin: 0px  0px 0px 5px;
+      font-weight: bold; 
+     }
+.PP01-link2d {   
+      font-size: calc(10px);
+      color: black;
+      margin: 1px  1px 1px 1px;
+      font-weight: bold; 
+      text-align: justify;
+      width: 250px; /* Amplada fixa */
+      white-space: nowrap; /* Evita que el text es trenqui en diverses línies */
+    }
+.PP01-link3 {   
+      font-size: calc(14px);
+      color: black;
+      margin: 5px  5px 5px 5px;
+    }
+.PP01-link31 {       
+      font-size: calc(14px);
+      color: red;
+      margin: 5px  5px 5px 5px;
+      font-weight: bold;  
+    }
+.PP01-link32 {   
+      font-size: calc(14px);
+      color: green;
+      margin: 5px  5px 5px 5px;
+      font-weight: bold;
+    }
+.PP01-link33 {   
+      font-size: calc(14px);
+      color: rgb(17, 0, 128);
+      margin: 5px  5px 5px 5px;
+      font-weight: bold;
+    }
+.PP01-link34 {   
+      font-size: calc(14px);
+      color: rgb(228, 242, 37);
+      margin: 5px  5px 5px 5px;
+      font-weight: bold;
+    }
+.PP01-input {
+        font-size: calc(10px);
+        border-radius: 10px;   
+      }
+.error-message {
+  font-size: 0.875rem;
+  margin-top: 4px;
+  padding: 2px 4px;
+  border: 1px solid red;
+  border-radius: 4px;
+  background-color: #fdd;
+}
+.form-container {
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 70px;
+  margin: auto;
+}
+.form-container label {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+.form-container input[type="text"] {   
+ width:7ch;
+  padding: 2px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+.form-container input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
+ @media only screen and (max-width: 600px) {
+   .P01 {
+        width: 90%;
+        max-width: 400px; 
+      }
+    }  
+.Pbutton-disabled {
+  width: 90px;
+  height:45px; 
+  padding: 4px 4px;
+  background-color: #e4e9ee;
+  border: none;
+  border-radius: 4px;
+  color: black;
+  cursor: pointer;
+  margin: 2px  2px 2px 2px;
+}
+.Pbutton-enabled {  
+  width: 90px;
+  height:45px;   
+  padding: 4px 4px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  margin: 2px  2px 2px 2px;
+}
+.Plogo {
+  width: 30px;  
+  height: 25px;  
+  margin-right: 5px;
+}
+.Pbutton-text {
+  font-size: 16px;
+}
+.Pbutton-with-logo:hover {
+  background-color: #0056b3;
+}
+.PP02-buto {
+    font-size: calc(15px);
+    margin-top: 10px;    
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 3px 3px 3px 3px;
+    margin:  3px 3px 3px 3px;    
+}
+.small-buttonP2 {
+    font-size: 20px; /* Redueix la mida del text */
+    padding: 4px 8px; /* Redueix els espais interns */
+    height: 40px; /* Fa que el botó sigui més baix */
+    line-height: 1;
+    margin:  3px 3px 3px 3px;    
+}

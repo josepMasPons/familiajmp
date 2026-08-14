@@ -1,0 +1,32 @@
+.JMContra-requadreCO1 {
+    margin-left: 15%; 
+    display: flex;          /*   Activa flexbox */
+    justify-content: center; /* Centra horitzontalment */
+    align-items: center;     /* Centra verticalment si cal */
+    width: 50%;             /* Fa que ocupi tot l'ample */
+    text-align: center;      /* Centra el text */
+    padding: 10px;           /* Espai interior per millorar l'estètica */
+    background-color: #cad9e9; /* Color de fons suau (opcional) */
+    border-radius: 8px;      /* Cantonades arrodonides */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Ombra suau */
+  }
+  .JMContra-requadreCO2 {
+    margin-left: 15%; 
+    display: flex;          /*   Activa flexbox */
+    justify-content: center; /* Centra horitzontalment */
+    align-items: center;     /* Centra verticalment si cal */
+    width: 50%;             /* Fa que ocupi tot l'ample */
+    text-align: center;      /* Centra el text */
+    padding: 10px;           /* Espai interior per millorar l'estètica */
+    background-color: #cad9e9; /* Color de fons suau (opcional) */
+    border-radius: 8px;      /* Cantonades arrodonides */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Ombra suau */
+  }
+.brand-titleCO {
+      font-size: 1.0rem;
+      font-weight: bold;
+      color: #343a40;
+      text-align: center;
+      display: block;
+      margin-left: 0;
+    }

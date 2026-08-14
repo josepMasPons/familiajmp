@@ -1,0 +1,442 @@
+.Permisos-requadreCO1 {
+    margin-left: 15%; 
+    display: flex;          /*   Activa flexbox */
+    justify-content: center; /* Centra horitzontalment */
+    align-items: center;     /* Centra verticalment si cal */
+    width: 50%;             /* Fa que ocupi tot l'ample */
+    text-align: center;      /* Centra el text */
+    padding: 10px;           /* Espai interior per millorar l'estètica */
+    background-color: #cad9e9; /* Color de fons suau (opcional) */
+    border-radius: 8px;      /* Cantonades arrodonides */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Ombra suau */
+  }
+
+/* ************* resta ********************** */
+.nomP03 {
+  text-align: right;
+  background-color: rgb(52, 190, 212);
+}
+.IP03 {
+  width: 420px;
+  height: 700px;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  max-width: 100%; 
+  overflow: hidden;
+  overflow-y: auto; 
+  text-align: center; 
+  padding: 8px;
+  background-color: #45e7da;
+  border-radius: 5px;  
+  border: 2px solid white;
+}
+ 
+.P03-cap1 {  
+    clear: initial;  
+    display: flex;
+    overflow-x: auto;
+    background-color:rgb(149, 236, 201);
+    border-radius: 5px;   
+}
+.IP03-cap {  
+  flex-direction: column;
+  /*margin: 5px;*/
+}
+.P03-cap2  {  
+  display:flex;  
+  flex-wrap: wrap;
+  flex-direction: row;  
+  justify-content: space-between;  
+  background-color: #d3d3d3;
+  border-radius: 5px;
+  border: 4px solid rgb(25, 25, 26); 
+  margin: 10px;  
+}
+.P03-cap3V {
+  display:flex;  
+  flex-wrap: wrap;
+  flex-direction: column;  
+  justify-content: space-between;  
+  background-color: #f0f06d;
+  border-radius: 5px;
+  border: 4px solid rgb(25, 25, 26); 
+  margin: 10px; 
+}
+.P03-cap3, .P03-cap4 {
+  display:flex;  
+  flex-wrap: wrap;
+  flex-direction: row;  
+  justify-content: space-between;  
+  background-color: #d3d3d3;
+  border-radius: 5px;
+  border: 4px solid rgb(25, 25, 26); 
+  margin: 10px; 
+
+  
+}
+.P03-lin1, .P03-lin2, .P03-lin3 {
+  text-align: left;
+  font-size:small;
+  margin: 5px;
+  font-weight: bold;
+}
+
+.IP03-Nom {  
+  text-align: center; 
+  justify-content: center;
+  align-items: center;  
+  font-size:x-large;
+  font-weight: bold;
+  margin: 2px;
+}
+.P03-butoVV {
+  margin-top: 2px;   
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 8x;
+  margin:  10;
+  border-radius: 5px;  
+  margin: 2px;
+  height: 30px;
+   
+  font-size:small;
+  font-weight: bold;
+  text-align: center;   
+}
+  .P05M-buto  {
+  margin-top: 2px;   
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 8x;
+  margin:  10px;
+  border-radius: 2px;  
+  height: 30px;   
+  font-size:small;
+  font-weight: bold;
+  text-align: center;
+
+}  
+
+.P03-buto, .P03-butoV {
+  margin-top: 10px;   
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 8x;
+  margin:  10;
+  border-radius: 5px;  
+  margin: 10px;
+  height: 30px;
+   
+  font-size:small;
+  font-weight: bold;
+  text-align: center;
+
+}  
+  @media (max-width: 768px) {
+    .P03-cap {
+        padding: 5px;
+    }
+  
+    .P03-lin1, .P03-lin2, .P03-lin3 {
+        font-size: medium;
+    }
+  
+    .P03-buto, .P03-butoV {
+        padding: 5px; 
+          }
+  }
+  .IP03-link4 {   
+    font-size: calc(12px);
+    color: black;
+    margin: 0px  0px 0px 15px;
+  }
+  .M4thumbnail-container {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 5px; 
+    margin-top: 20px;
+    /*margin-left: 15%; */ 
+  }
+  .M4thumbnail-wrapper {
+    margin-top: 20px;
+    margin-left: 15%;  
+  }
+  
+  .M4thumbnail-image {
+    width: 100px; 
+    height: 100px;
+    cursor: pointer;
+    border: 2px solid #ddd; 
+    border-radius: 5px;
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+  }
+  
+  .M4thumbnail-image:hover {
+    transform: scale(1.1); 
+  }
+  
+  .M4carousel-control-prev,
+  .M4carousel-control-next {
+    font-size: 2rem !important; 
+    z-index: 1 !important; 
+    top: 50% !important;  
+    color: #c31212 !important;
+    width: auto !important; 
+  }
+  
+  .M4carousel-control-prev {
+    left: 10px !important;
+  }
+  
+  .M4carousel-control-next {
+    right: 10px !important;  
+  }
+  
+  .M4imatge-a-pantalla-completa {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.9); 
+  }
+  
+  .M4carrousel-imatge04 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    object-fit: contain; 
+    max-height: 370px; 
+  }
+  
+  .M4carrousel-buto04a {     
+    width: 80px;
+    height: 30px;
+    border-radius: 0px;
+    background-color: #007bff;
+    color: #fff;  
+  }
+  
+  .M4carrousel-buto04b {     
+    width: 80px;
+    height: 30px;
+    border-radius: 0px;
+    background-color: #007bff;
+    color: #fff;
+    margin-right: 20px;
+  }
+  .M4butofi {
+    width: 140px;
+    height: 30px;
+    border-radius: 0px;
+    background-color: #007bff;
+    color: #fff;
+    margin:auto; 
+  }
+  
+  .M4carrousel-input04 {     
+    width: 40px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    margin-right: 20px;
+  }
+  
+  .M4carrousel-butoGen04 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .inventari-requadre {
+    margin-left: 15%; 
+    display: flex;          /*   Activa flexbox */
+    justify-content: center; /* Centra horitzontalment */
+    align-items: center;     /* Centra verticalment si cal */
+    width: 50%;             /* Fa que ocupi tot l'ample */
+    text-align: center;      /* Centra el text */
+    padding: 10px;           /* Espai interior per millorar l'estètica */
+    background-color: #f8f9fa; /* Color de fons suau (opcional) */
+    border-radius: 8px;      /* Cantonades arrodonides */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Ombra suau */
+  }
+  
+  .inventari-container {
+    display: flex;
+    justify-content: center;  /* Centra horitzontalment */
+    /* align-items: center;        Centra verticalment */
+    height: 100vh;            /* Ocupa tota l'alçada de la pantalla */
+    width: 100%;              /* Ocupa tot l'ample */
+}
+
+.contenidor-flex {
+  display: flex;        /* Flexbox layout */
+  align-items: center;  /* Alinea els elements verticalment al centre */
+  justify-content: flex-start;  /* Alinea els elements a l'inici (esquerra) */
+  gap: 10px;            /* Espai entre els elements (nom i textarea) */
+}
+
+.Icustom-textarea {
+  width: 100%; /* Ample del 100% del contenidor, però amb un màxim */
+  max-width: 400px;  /* L'ample màxim en pantalles grans */
+  background-color: #e8e5e5;     
+  border-radius: 1px; 
+  font-size: 12px;  
+  resize: vertical;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-right: 10px; /* Espaiat dret */
+  position: relative;
+}
+
+.nom-text {
+  font-size: 14px;  /* Mida de la font per al nom */
+  font-weight: bold; /* Text en negreta */
+  width: 150px;
+}
+
+/* Media query per mòbils */
+
+/* Media query per mòbils i pantalles petites */
+@media (max-width: 768px) {
+    .Icustom-textarea {
+        width: 90%; /* Ample del 90% per a pantalles petites */
+        font-size: 10px; /* Lletres lleugerament més petites en mòbils */
+        right: 0; /* Elimina el desplaçament */
+        margin-right: auto; /* Elimina margin per centrat */
+        margin-left: auto;  /* Centrat en mòbils també */
+    }
+}
+
+  .Icustom-textarea3 {
+    width: 400px;  
+   
+    background-color: #45e7da; 
+    padding: 5px;  
+    border: 5px;
+    border-radius: 1px; 
+    resize: vertical;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+  .Icustom-textarea3A {
+    width: 300px;   
+    background-color: #45e7da;    
+    padding: 5px;  
+    border: 5px;
+    border-radius: 1px;   
+    resize: vertical; 
+    font-weight: bold;
+    vertical-align: middle;
+  }
+  .IcolorPhoto {
+    background-color: #d3d3d3;      
+    padding: 1px; 
+    border: 1px;
+    border-radius: 1px; 
+    margin-top: 20px;
+  }
+  .ImP02-buto {
+    margin-top: 2px;    
+    background-color: #007bff;
+    color: #fff;
+    border: none;     
+    cursor: pointer;
+    padding: 2px;
+    margin:  2px;
+    border-radius: 5px;  
+    font-size: 10px;
+  
+}
+.custom-modal .modal-dialog {
+   
+  max-width: 90%; /* Ajusta l'ample del modal */
+  margin: 1rem auto; /* Marges laterals */
+}
+
+@media (min-width: 768px) {
+  .custom-modal .modal-dialog {
+    max-width: 500px; /* Més ample per a pantalles més grans */
+  }
+}
+
+@media (max-width: 576px) {
+  .responsive-modal .modal-dialog {
+    max-width: 100%; /* Ocupa tot l'ample en mòbils petits */
+    padding: 0.5rem; /* Evita que el contingut estigui enganxat als marges */
+  }
+}
+.small-button {
+  font-size: 15px; /* Redueix la mida del text */
+  padding: 4px 8px; /* Redueix els espais interns */
+  height: 30px; /* Fa que el botó sigui més baix */
+  line-height: 1;
+}
+
+.small-card {
+  max-width: 400px; /* Redueix l'amplada de la targeta */
+  font-size: 25px; /* Fa el text més petit */
+  padding: 10px; /* Redueix el padding */
+}
+
+.small-textarea {
+  font-size: 22px; /* Fa més petit el text del textarea */
+  height: 40px; /* Redueix l'altura */
+  padding: 5px; /* Redueix l'espai intern */
+  font-weight: bold;
+ 
+}
+.menys-espai {  
+    padding-top: 0.5rem;  /* Redueix l'espai interior superior */
+    margin-top: -25px;   /* Redueix la separació amb l'element anterior */
+  
+}
+.Icustom-radios {
+  display: flex;
+  gap: 15px; /* Ajusta l'espai entre els elements */
+  align-items: center; /* Centra verticalment */
+}
+
+.contenidor-flex-radios {
+  display: flex;
+  /*flex-direction: column; */
+  gap: 8px; /* Espai entre els elements */
+  margin-bottom: 15px; /* Espai entre cada bloc de pregunta */
+  align-items: center;  /* Alinea els elements verticalment al centre */
+  justify-content: flex-start;  /* Alinea els elements a l'inici (esquerra) */
+ }
+ .contenidor-principalK {
+  display: flex;
+  flex-direction: column; /* Col·loca els elements en una columna */
+  gap: 2px; /* Espai entre cada apartat */
+}
+.contenidor-flexAA {
+  display: flex;        /* Flexbox layout */
+  align-items: center;  /* Alinea els elements verticalment al centre */
+  justify-content: flex-start;  /* Alinea els elements a l'inici (esquerra) */
+  gap: 10px;            /* Espai entre els elements (nom i textarea) */
+}
+.nom-text-radiosAA {
+  font-size: 14px;  /* Mida de la font per al nom */
+  font-weight: bold; /* Text en negreta */
+  width: 150px;
+}
+.Icustom-textareaAA{
+  width: 100%; /* Ample del 100% del contenidor, però amb un màxim */
+  max-width: 400px;  /* L'ample màxim en pantalles grans */
+  background-color: #e8e5e5;     
+  border-radius: 1px; 
+  font-size: 12px;  
+   
+  font-weight: bold;
+}

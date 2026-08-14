@@ -1,0 +1,108 @@
+.P02B_center-contentP2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+.P02B_my-fs5 {
+  font-size: 1.25rem; /* Equivalent a fs-5 de Bootstrap */
+  
+}
+
+.P02B_my-fw-bold {
+  font-weight: bold;
+ text-align: center;
+}
+
+.P02B_my-mt5 {
+  margin-top: 3rem; /* Equivalent a mt-5 de Bootstrap */
+}
+
+.P02B_my-mt3 {
+  margin-top: 1rem; /* Equivalent a mt-3 de Bootstrap */
+}
+
+/* Estils de la taula */
+.P02B_table-responsiveP2 {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.P02B_BtablaP2 {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd; 
+}
+
+.P02B_BTablaP2-temp, .P02B_BTablaP2-nom {
+  padding: 4px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.P02B_BTablaP2-temp {
+  width: 20px;
+  font-weight: bold;
+   color: #333030;
+  /* background-color: #f9f9f9;*/
+}
+
+.P02B_BTablaP2-nom {
+  font-size: 12px;
+  color: #333030;
+  font-weight: bold;
+}
+
+.P02B_custom-logout-btn {
+  background-color: #28a745;
+  color: white;
+  border-radius: 4px;
+  padding: 5px 8px;
+  border: none;
+  font-size: 11px;
+}
+
+.P02B_custom-logout-btn:hover {
+  background-color: #218838;
+  cursor: pointer;
+}
+
+.P02B_small-buttonP2 {
+  font-size: 12px;
+  padding: 8px 16px;
+}
+.P02B_my-flex {
+  display: flex;
+}
+
+.P02B_my-justify-center {
+  justify-content: center;
+}
+.P02B_BtablaP2 tr.selected {
+  background-color: yellow;
+  font-weight: bold;  
+} 
+.P02B_BtablaP2 tr:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.P02B_map-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  width: 140px;        /* ajusta segons necessitis */
+  border-radius: 12px;
+}
+
+.P02B_map-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 6px;
+}
+
+.P02B_map-text {
+  font-size: 0.75rem;
+  color: #555;
+}
