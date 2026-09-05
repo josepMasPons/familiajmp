@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useEffect, useState } from "react";
 import { useNavigate , useLocation} from 'react-router-dom';
-import Versio  from "./Backups/Versio";
+import Versio  from "./JMGlobal/Versio";
  
 function App() {
   const [missatge,setMissatge] = useState('');
