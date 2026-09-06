@@ -15,7 +15,7 @@ import logo09 from "../fotos/f09.jpg";
 import logo10 from "../fotos/f10.jpg";
 import logo11 from "../fotos/f11.jpg";
 import logo12 from "../fotos/f12.jpg";
-import "./Pantalla02.css";
+import Benrera from "../JMGlobal/Benrera";
 
 function Pantalla02() {
   const navigate=useNavigate();
@@ -27,27 +27,7 @@ function Pantalla02() {
   const [logoR, setLogoR] = useState('');
   // useEffect per dirigir auto màticament al invitats
   
-   // useEffect per anular buto retorn mòbil *********************
-   useEffect(() => {
-    const anularReturn = (event) => {
-      event.preventDefault();
-    // 1.- evita que el butó enrera et tregui de l'aplicació
-      if (window.history.state && window.history.state.preventExit) {
-          navigate(0);
-      }
-    }
-    // 2.- afageix un estat al historial per no surtir directament
-    window.history.pushState({preventExit: true},'');
-    // 3.- Gestiona events del butó enrera
-    window.addEventListener('popstate',anularReturn);
-    // 4.- Neteja 
-    return () => {
-        window.removeEventListener('popstate',anularReturn);
-        window.history.replaceState(null,'');
-    }
-   }, [navigate]);
- // useEffect per anular buto retorn mòbil *********************
-
+   
   useEffect(() => {     
     const loadRandomImage = () => {
       const imatges = [logo01, logo02, logo03, logo04, logo05, logo06, logo07, logo08, logo09, logo10, logo11, logo12];
@@ -88,7 +68,7 @@ function Pantalla02() {
     localStorage.setItem('Programa', '/Preguntes');
     return '/Preguntes';
   }
-  
+  Benrera(Sacabat);
   return (
     <>
     <div className="center-contentP2">  

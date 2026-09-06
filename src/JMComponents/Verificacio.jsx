@@ -11,7 +11,7 @@ import {storageCar, db } from '../firebaseLoc';
 import { collection, getDocs } from 'firebase/firestore';
 import { ref as refCar, listAll, getDownloadURL } from 'firebase/storage'; 
 import "./Global.css";
-import { Timestamp } from "firebase/firestore/lite";
+import Benrera from "../JMGlobal/Benrera";
 
 const Verificacio = () => {
   const navigate=useNavigate();
@@ -184,7 +184,7 @@ const Verificacio = () => {
     localStorage.setItem('Programa', '/Pantalla02');
     navigate('/Pantalla02');
 }  
-  
+ Benrera(Sacabat); 
   return (
     <div>
        <div className="ImP02VE">   

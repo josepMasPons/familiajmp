@@ -8,17 +8,14 @@ import { ref as refCar,
                 uploadBytes } from 'firebase/storage'; 
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import imageCompression from 'browser-image-compression';
-
 import {storageCar, db } from '../firebaseLoc'; 
-
 import { doc, updateDoc, 
           getDoc, setDoc,
           getDocs, collection, 
           query, orderBy, 
           limit  } from 'firebase/firestore'; 
 import { useNavigate } from 'react-router-dom';
-    
+import Benrera from '../JMGlobal/Benrera';   
   
 export default function Preguntes() {
   const [gravar, setGravar] = useState(0);  
@@ -115,28 +112,6 @@ export default function Preguntes() {
     };  
     fetchAllMediaI();  
   }, [inici]);
-  
-    
-  useEffect(() => {    
-    const anularReturn = (event) => {
-    event.preventDefault();
-
-    // 1.- evita que el butó enrera et tregui de l'aplicació
-      if (window.history.state && window.history.state.preventExit) {
-        navigate(0);
-      }
-    }
-    // 2.- afageix un estat al historial per no surtir directament
-    window.history.pushState({preventExit: true},'');
-    // 3.- Gestiona events del butó enrera
-    window.addEventListener('popstate',anularReturn);
-    // 4.- Neteja 
-    return () => {
-      window.removeEventListener('popstate',anularReturn);
-      window.history.replaceState(null,'');
-    }  
-  }, [navigate]);  
-  
   const grups = [media.grup1];
   const handleSelect = (selectedIndex) => { 
     setUrlw(elements[selectedIndex].url);    
@@ -190,7 +165,8 @@ async function uploadFiles() {
 function Sacabat() {    
   localStorage.setItem('Programa', '/Pantalla02');
   navigate('/Pantalla02');
-}  
+}
+Benrera(Sacabat);  
 return (
   <>  
   <div>

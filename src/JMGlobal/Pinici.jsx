@@ -19,9 +19,9 @@ import { Form, Button, Container, Row, Col, Card, Nav, Navbar,
          TabContainer} from "react-bootstrap";
 import { storageCar, db } from '../firebaseLoc.js';
 import { query, where, getDocs, collection } from 'firebase/firestore';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
-import Netejacache  from '../JMComponents/Netejacache.jsx';
+//import Netejacache  from '../JMComponents/Netejacache.jsx';
+import Benrera from './Benrera.js';
 
 function Pinici({ canviarPantalla }) {
     const [isPasswordCorrect, setIsPasswordCorrect] = useState(false);
@@ -210,10 +210,7 @@ function Pinici({ canviarPantalla }) {
    const jocs = () => {
     navigate('/Jocs0');
   }
-   const Enrera = () => {
-    navigate('/');
-  };
-  const sacabat = () => {
+   const Sacabat = () => {
     localStorage.setItem('IniciJMP', 'Si');  
     localStorage.setItem('AdminFam', 'No');
     localStorage.setItem('NomJ', '');
@@ -223,44 +220,12 @@ function Pinici({ canviarPantalla }) {
     setEsValid(null);    
     navigate('/');
   };
-  const handleChange = (e) => {
-       const valor = e.target.value;
-       setInputx(valor);   
-   }
   useEffect(() => {
   if (siContra === true && inputRef.current) {
     inputRef.current.focus();
   }
   }, [siContra]);
- /*
-  const Validar = (e) => {  
-   
-    if (inputx === 'admxx' || inputx === 'Admxx') {
-     localStorage.setItem('AdminFam', 'Si');  
-     setAdminFam(`Si`);
-     setEsValid(true);
-     setSicontra(false);
-     return;
-    }
-    
-    if (e === '.') {
-     setSicontra(true);     
-     return;
-    }
-    setSicontra(false);
-    const normalitza = (text) =>      
-    text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-
-    if (normalitza(inputx).includes(normalitza(resposta))) {
-     localStorage.setItem('AdminFam', 'No');
-     setAdminFam(`No`);  
-     setEsValid(true);
-     } else {
-     localStorage.setItem('AdminFam', 'No'); 
-     setAdminFam(`No`);   
-     setEsValid(false);
-    }
-  }  */
+ 
   const handleSubmit = (event) => {    
         event.preventDefault();
         if (!validateEmail(email)) {
@@ -350,9 +315,10 @@ function Pinici({ canviarPantalla }) {
  
   const checkIfEmailExists = (email) => 
         data.some(item => item.mail === email);
+  Benrera(Sacabat);
   return ( 
       <div>
-      <Netejacache />       
+      {/*<Netejacache />*/}       
       <div>        
         <div className="PP01"> 
              <header className="PP01-header1">               
@@ -588,7 +554,7 @@ function Pinici({ canviarPantalla }) {
                    /> 
                    <Pbuto 
                            name="Sortir" 
-                           onClick={sacabat}
+                           onClick={Sacabat}
                            nLogo='3'                             
                            
                    /> 

@@ -4,6 +4,7 @@ import Player from './Player.js';
 import Bullet from './Bullet.js';
 import './Marcians.css'; 
 import { useNavigate } from "react-router-dom";
+import Benrera from '../../JMGlobal/Benrera.js';
 
 function Marcians({ canviarPantalla }) {
   const navigate = useNavigate();
@@ -261,7 +262,7 @@ const checkCollision = () => {
   function Sacabat() {
    navigate('/Jocs0');
   }
-
+  Benrera(Sacabat);
   return (
     <div> 
     

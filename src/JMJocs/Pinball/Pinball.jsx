@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Pinball.css';
 import { useNavigate } from "react-router-dom";
 import { Form, Button} from "react-bootstrap";
+import Benrera from '../../JMGlobal/Benrera';
  
 
 function TJPinball() {
@@ -421,6 +422,7 @@ for (let arc of arcWalls) {
        });
       setBallPosition(getIniciStart());
     }; 
+  Benrera(Sacabat);
   return (
     <>
     

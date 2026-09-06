@@ -15,6 +15,7 @@ import 'leaflet/dist/leaflet.css';
 import './WorldMap.css';
 import { db } from '../firebaseLoc'; 
 import { doc, setDoc } from 'firebase/firestore'; 
+import Benrera from '../JMGlobal/Benrera';
 
 /* 🔧 Fix icones Leaflet */
 delete L.Icon.Default.prototype._getIconUrl;
@@ -237,7 +238,10 @@ export default function WorldMap() {
     if (allPoints.length < 2) return [];
     return [...allPoints.map(p => [p.lat, p.lng]), [allPoints[0].lat, allPoints[0].lng]];
   }, [allPoints]);
-
+  function Sacabat() {   
+    navigate(-1);
+  }
+  Benrera(Sacabat);
   return (
     <div className="map-frame">
       <h1>{nomP}</h1>
@@ -287,7 +291,7 @@ export default function WorldMap() {
       <Button className="mb-2"
               variant='warning'
               size='sm'
-              onClick={() => navigate(-1)}>
+              onClick={Sacabat}>
         Enrere
       </Button>
     </div>

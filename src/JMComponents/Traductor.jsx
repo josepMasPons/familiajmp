@@ -7,18 +7,15 @@ export default function CsvTranslatorEnhanced() {
   const [file, setFile] = useState(null);
   const [loading, setLoading] = useState(false);
   const [progress, setProgress] = useState(0);
-
-  const columnsToTranslate = ["pregunta", "resposta_1", "resposta_2", "resposta_3", "resposta_4"];
-
+  const columnsToTranslate = ["pregunta", "resposta_1", 
+                              "resposta_2", "resposta_3", "resposta_4"];
   const handleFileChange = (e) => {
     setFile(e.target.files[0]);
   };
-
   const handleTranslate = async () => {
     if (!file) return;
     setLoading(true);
     setProgress(0);
-
     Papa.parse(file, {
       header: true,
       skipEmptyLines: true,

@@ -9,8 +9,9 @@ import { collection, deleteDoc, writeBatch, doc, limit, query, getDocs } from 'f
 import imageCompression from 'browser-image-compression';
 import videoF from '../fotos/veureVideo.jpg';
 import mapa from '../fotos/mapa.jpg';
-export default function Pantalla03() {
-  
+import Benrera from '../JMGlobal/Benrera';
+
+export default function Pantalla03() {  
   const [media, setMedia] = useState([]);
   const [mediaV, setMediaV] = useState([]);
   const [error, setError] = useState(null);
@@ -494,6 +495,7 @@ async function uploadFiles() {
       localStorage.setItem('Mapa05', c13);      
       navigate('/WorldMap');      
   } 
+  Benrera(Sacabat);
   return (
     <div>
      <div className="min-vh-100 bg-light d-flex align-items-center">

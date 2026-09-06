@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { Navbar, Container, Row, Nav, Col, Card, Button } from "react-bootstrap";
 import { emoji } from "./emoji";
+import Benrera from './Benrera';
 
 const Backup = () => {
   const navigate=useNavigate();
@@ -9,6 +10,7 @@ const Backup = () => {
      localStorage.setItem('IniciJMP', 'No');
      navigate('/PInici');
   }
+  Benrera(Sacabat);
   return (
     <>  
      <div  style={{ textAlign: "center", fontFamily: "Arial, sans-serif" }}>  

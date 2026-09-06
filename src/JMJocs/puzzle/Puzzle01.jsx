@@ -2,16 +2,12 @@ import { Form, Button, Container, Row, Col, Card} from "react-bootstrap";
 import { ref as refCar, listAll, getDownloadURL, uploadBytesResumable } from 'firebase/storage'; 
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-//import { LazyLoadImage } from 'react-lazy-load-image-component';
-/*import { doc, updateDoc, 
-          getDoc, setDoc,
-          getDocs, collection, 
-          query, orderBy, 
-          limit  } from 'firebase/firestore'; */
 import { storageCar, db } from '../../firebaseLoc.js';
 import { useNavigate } from 'react-router-dom';
 import React, { useState, useRef, useEffect } from 'react';
 import "./Puzzle01.css";
+import Benrera from "../../JMGlobal/Benrera.js";
+
 function shuffle(arr) {
   return [...arr].sort(() => Math.random() - 0.5);
 }
@@ -195,7 +191,7 @@ const solved = order.every((v, i) => v === i);
     setCanviIm(false);
     setJugar(true);
   }; 
-  const sacabat = () => { 
+  const Sacabat = () => { 
     if (jugar === true) {
       restart();
     } 
@@ -204,7 +200,7 @@ const solved = order.every((v, i) => v === i);
     }
     
   };     
-
+  Benrera(Sacabat);
   return (
     <div className="inici">
       <h1 className='title'>Puzzle</h1>
@@ -265,7 +261,7 @@ const solved = order.every((v, i) => v === i);
         <Button className="mb-2" 
                 variant="warning"
                    size='sm'
-                onClick={sacabat}>                                      
+                onClick={Sacabat}>                                      
               Sortir Joc   
         </Button>   
         <Button className="mb-2" 

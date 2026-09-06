@@ -6,6 +6,7 @@ import imatge02 from '../Jocs0Logos/JMHimage02.svg';
 import imatge03 from '../Jocs0Logos/gespa.jpg';
 import { useNavigate } from "react-router-dom";
 import { Form, Button} from "react-bootstrap";
+import Benrera from '../../JMGlobal/Benrera';
 
 const TJHero01 = () => {
   const navigate = useNavigate();
@@ -261,6 +262,7 @@ const TJHero01 = () => {
         generarPosicioAleatoria();
 
     }; 
+    Benrera(Sacabat);
   return (
     <div>
       <h2 className="capsalera">Fox Hunt</h2>

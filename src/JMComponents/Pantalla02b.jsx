@@ -5,7 +5,8 @@ import { collection, getDocs } from 'firebase/firestore';
 import "./Pantalla02b.css";
 import {db } from '../firebaseLoc';
 import mapa from '../fotos/mapa.jpg';
-import { findAllByTestId } from '@testing-library/react';
+import Benrera from '../JMGlobal/Benrera';
+
 function Pantalla02b() { 
   const navigate=useNavigate(); 
   const [mapaG, setMapaG] = useState([]);
@@ -25,25 +26,7 @@ function Pantalla02b() {
   const currentItems=data.slice(0, itemsPerPage);
   const emptyRows = itemsPerPage - currentItems.length;
   const paddedItems = [...currentItems, ...Array(emptyRows).fill({ temp: '.', nom: ' ', codi: 'empty' })];
- // useEffect per anular buto retorn mòbil *********************
- useEffect(() => {
-      const anularReturn = (event) => {
-        event.preventDefault();
-      // 1.- evita que el butó enrera et tregui de l'aplicació
-        if (window.history.state && window.history.state.preventExit) {
-            navigate(0);
-        }
-      }
-      // 2.- afageix un estat al historial per no surtir directament
-      window.history.pushState({preventExit: true},'');
-      // 3.- Gestiona events del butó enrera
-      window.addEventListener('popstate',anularReturn);
-      // 4.- Neteja 
-      return () => {
-          window.removeEventListener('popstate',anularReturn);
-          window.history.replaceState(null,'');
-      }
-     }, [navigate]);
+ 
  useEffect(() => {
     if (direct1=== '' || direct1 === null
                       || directS === false) return;
@@ -255,10 +238,9 @@ function Pantalla02b() {
   function Mapa() { 
       localStorage.setItem('Mapa01', 'G'); 
       localStorage.setItem('Mapa04', '');
-      navigate('/WorldMap');
-      
+       navigate('/WorldMap');     
   }      
-   
+  Benrera(Sacabat);  
   return (    
   <div className="P02b_center-contentP2">
   <Card.Header className="P02B_my-fs5 

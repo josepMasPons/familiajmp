@@ -5,9 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { storageCar } from '../firebaseLoc';
-import fotoPdf from './logopdf.png';
+import fotoPdf from '../fotos/logopdf.png';
 import { useNavigate } from "react-router-dom";
 import "./Pantalla04.css";
+import Benrera from '../JMGlobal/Benrera';
 
 function GridView({ elements, onSelect, onSelectPdf }) {
   return (
@@ -83,7 +84,7 @@ function Pantalla04() {
   const c02 = localStorage.getItem('Proces011');
   const c03 = localStorage.getItem('Proces012');
   const c99 = localStorage.getItem('Proces025');
-// ----- fer que el butó < en mòbil faci el mateix que  enrere ----
+/* ----- fer que el butó < en mòbil faci el mateix que  enrere ----
  useEffect(() => {
     const handler = (event) => {
       event.preventDefault();
@@ -104,6 +105,7 @@ function Pantalla04() {
       window.removeEventListener('keydown', keyDownHandler);
     };
   }, [view]);
+  */
   // Carrega les imatges i detecta orientació
   useEffect(() => {
   const fetchElements = async () => {
@@ -166,10 +168,10 @@ function Pantalla04() {
 const keyDownHandler = (event) => {
   if(event.key === 'Backspace' && !event.target.closest('input, textarea')) {
      event.preventDefault();
-     handleBack();
+     Sacabat();
   }
 }
-const handleBack = () => {
+const Sacabat = () => {
     // console.log('handleBack - '+ view);
     if (view === 'carousel')   {
        // console.log('Pasat a grid ---')
@@ -184,6 +186,7 @@ const handleBack = () => {
        }
     };
   };
+  Benrera(Sacabat);
   return (
     <div>
       <div className="M4TextP4x">
@@ -197,7 +200,7 @@ const handleBack = () => {
             className="mb-2"
             variant="warning"
             size='sm'
-            onClick={handleBack}
+            onClick={Sacabat}
           >
             Enrere
           </Button>

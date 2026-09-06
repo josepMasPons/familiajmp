@@ -6,7 +6,7 @@ import Jocs0Buto from "./Jocs0Buto.jsx";
 import { useNavigate } from "react-router-dom";
 import { storageCar, db } from '../firebaseLoc';
 import { collection, deleteDoc, writeBatch, doc, limit, query, getDocs } from 'firebase/firestore';
-
+import Benrera from '../JMGlobal/Benrera.js';
 
 function Jocs0() {
   const navigate = useNavigate();
@@ -125,7 +125,7 @@ function Jocs0() {
     localStorage.setItem('IniciJMP', 'No');
     navigate('/Pinici');
   }
-
+  Benrera(Sacabat);
   return (
     <div className='J0nomP'>       
         <div className="J0P01">

@@ -3,6 +3,7 @@
   import { query, where, getDocs, collection } from 'firebase/firestore';
   import { ref as refCar, listAll, getDownloadURL } from 'firebase/storage'; 
   import { Form, Button} from "react-bootstrap";
+  import Benrera from "../../JMGlobal/Benrera.js";
  
   import { storageCar, db } from '../../firebaseLoc.js';
 
@@ -335,6 +336,7 @@
     const toggleMenuB = () => {
       setIsOpenB(!isOpenB);
     } 
+    Benrera(Sacabat);
     return ( 
       <>
 

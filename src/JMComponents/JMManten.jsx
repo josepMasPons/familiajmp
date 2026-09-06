@@ -6,7 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {storageCar, db } from '../firebaseLoc'; 
 import { doc, updateDoc, getDoc,         
          getDocs, collection} from 'firebase/firestore'; 
-import { useNavigate } from 'react-router-dom';  
+import { useNavigate } from 'react-router-dom';
+import Benrera from '../JMGlobal/Benrera';
 
 export default function JMManten() {
   const [gravar, setGravar] = useState(0);
@@ -94,26 +95,6 @@ export default function JMManten() {
       setSwreturn(1);
     }
   }, [sw01]);  
-  useEffect(() => {    
-    const anularReturn = (event) => {
-    event.preventDefault();
-
-    // 1.- evita que el butó enrera et tregui de l'aplicació
-      if (window.history.state && window.history.state.preventExit) {
-        navigate(0);
-      }
-    }
-    // 2.- afageix un estat al historial per no surtir directament
-    window.history.pushState({preventExit: true},'');
-    // 3.- Gestiona events del butó enrera
-    window.addEventListener('popstate',anularReturn);
-    // 4.- Neteja 
-    return () => {
-      window.removeEventListener('popstate',anularReturn);
-      window.history.replaceState(null,'');
-    }  
-  }, [navigate]);  
-
  useEffect(() => {    
  const fetchData = async () => {
   const linksCollection = collection(db, 'Familiar');
@@ -375,6 +356,7 @@ useEffect(() => {
     });
   }
 }, [mapes]);
+Benrera(Sacabat);
 return (
   <>  
     <Container className="mt-4">

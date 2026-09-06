@@ -19,7 +19,8 @@ import { doc, updateDoc,
           getDocs, collection, 
           query, orderBy, 
           limit  } from 'firebase/firestore'; 
-import { useNavigate } from 'react-router-dom';    
+import { useNavigate } from 'react-router-dom'; 
+import Benrera from '../JMGlobal/Benrera';   
   
 export default function JMAltaReg() {
   const [gravar, setGravar] = useState(0);  
@@ -132,28 +133,7 @@ export default function JMAltaReg() {
     };  
     fetchAllMediaI();  
   }, []);
-  
-    
-  useEffect(() => {    
-    const anularReturn = (event) => {
-    event.preventDefault();
-
-    // 1.- evita que el butó enrera et tregui de l'aplicació
-      if (window.history.state && window.history.state.preventExit) {
-        navigate(0);
-      }
-    }
-    // 2.- afageix un estat al historial per no surtir directament
-    window.history.pushState({preventExit: true},'');
-    // 3.- Gestiona events del butó enrera
-    window.addEventListener('popstate',anularReturn);
-    // 4.- Neteja 
-    return () => {
-      window.removeEventListener('popstate',anularReturn);
-      window.history.replaceState(null,'');
-    }  
-  }, [navigate]);  
-  
+ 
   const grups = [media.grup1];
   const handleSelect = (selectedIndex) => { 
     setUrlw(elements[selectedIndex].url);    
@@ -363,6 +343,7 @@ function Sacabat() {
   localStorage.setItem('Programa', '/Pantalla02');
   navigate('/Pantalla02');
 }  
+Benrera(Sacabat);
 return (
   <>  
   <div>

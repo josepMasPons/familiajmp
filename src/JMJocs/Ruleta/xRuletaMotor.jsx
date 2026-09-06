@@ -1,7 +1,6 @@
 import { useRef, useEffect ,useState} from "react";
 import { Button } from "react-bootstrap";
 import "./RuletaMotor.css";
-import { createSearchParams } from "react-router-dom";
 
 const SIZE = 320;
 const R = SIZE / 2;

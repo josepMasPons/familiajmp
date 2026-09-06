@@ -11,6 +11,7 @@ import f02 from './Imatges/gemma.jpg';
 import f03 from './Imatges/esther.jpg';
 import f04 from './Imatges/julia.jpg';
 import f05 from './Imatges/jordiimarc.jpg';
+import Benrera from "../../JMGlobal/Benrera";
 
 //const TOTAL = 63;
 const TOTAL = 50;
@@ -495,7 +496,7 @@ ctx.stroke();
   };
 
   const Sacabat = () => navigate('/Jocs0');
-
+  Benrera(Sacabat);
   return (
      <div className="casino-bg">
       <div 

@@ -2,25 +2,22 @@ import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Benrera from '../JMGlobal/Benrera';
 
 function Pantalla06() {
-
   const navigate = useNavigate();
-
   const [fullScreen, setFullScreen] = useState(false);
-
   // dades rebudes des de Pantalla04
   const pdfUrl = localStorage.getItem('PdfUrl');
   const pdfName = localStorage.getItem('PdfName');
 
-  const tornar = () => {
+  const Sacabat = () => {
     navigate('/Pantalla04');
   };
 
   const toggleFullScreen = () => {
     setFullScreen(!fullScreen);
   };
-
   if (!pdfUrl) {
     return (
       <div style={{
@@ -32,7 +29,7 @@ function Pantalla06() {
       </div>
     );
   }
-
+  Benrera(Sacabat);
   return (
     <div style={{
       width: '100%',
@@ -69,7 +66,7 @@ function Pantalla06() {
             <Button
               variant="warning"
               size="sm"
-              onClick={tornar}
+              onClick={Sacabat}
             >
               Enrere
             </Button>

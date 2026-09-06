@@ -1,8 +1,14 @@
 import { Card, Button, Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+import Benrera from "./Benrera";
+
 function JMTermsConditions() {
   const navigate = useNavigate();
+function Sacabat() {    
+    navigate('/PInici');
+  }
+Benrera(Sacabat);
 return (
     <Container className="d-flex justify-content-center align-items-center mt-4">
       <Card className="shadow-lg p-4" style={{ maxWidth: "800px", width: "100%" }}>
@@ -66,7 +72,7 @@ return (
           <hr />
 
           <div className="text-center">
-            <Button variant="danger" onClick={() => navigate('/Pinici')}>
+            <Button variant="danger" onClick={Sacabat}>
               Tornar
             </Button>
           </div>

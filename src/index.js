@@ -23,7 +23,7 @@ import Pantalla03         from './JMComponents/Pantalla03';
 import Pantalla04         from './JMComponents/Pantalla04';
 import Pantalla05         from './JMComponents/Pantalla05';
 import Pantalla06         from './JMComponents/Pantalla06';
-import Netejacache        from './JMComponents/Netejacache';
+//import Netejacache        from './JMComponents/Netejacache';
 import Visites            from './JMComponents/Visites';
 import Permisos           from './JMComponents/Permisos';
 import JMInvit            from './JMComponents/JMInvit';
@@ -66,7 +66,7 @@ root.render(
         <Route path='/Pantalla04' element={<Pantalla04 />} />
         <Route path='/Pantalla05' element={<Pantalla05 />} />
         <Route path='/Pantalla06' element={<Pantalla06 />} />
-        <Route path='/Netejacache' element={<Netejacache />} />
+   
         <Route path='/Visites' element={<Visites />} />
         <Route path='/Permisos' element={<Permisos />} />
         <Route path='/JMInvit' element={<JMInvit />} />

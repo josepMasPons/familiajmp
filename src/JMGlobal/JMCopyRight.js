@@ -1,6 +1,7 @@
 import { Card, Button, Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+import Benrera from "./Benrera";
 
 function JMCopyRight() {
   const navigate = useNavigate();
@@ -11,7 +12,10 @@ function JMCopyRight() {
   let Versio05 = localStorage.getItem("Versio05");
   let Versio06 = localStorage.getItem("Versio06");  
   const [passWord, setPassWord] = useState(localStorage.getItem('PassWord') || 'Convidat');
- 
+  function Sacabat() {    
+      navigate('/PInici');
+   }
+   Benrera(Sacabat);
   return (
     <Container className="d-flex justify-content-center align-items-center vh-100">
       <Card className="shadow-lg p-4 text-center" style={{ maxWidth: "500px" }}>
@@ -30,7 +34,7 @@ function JMCopyRight() {
           <Button 
             className="mt-3" 
             variant="danger"             
-            onClick={() => navigate('/Pinici')}>
+            onClick={Sacabat}>
           
             Tornar
           </Button>

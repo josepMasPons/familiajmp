@@ -8,6 +8,7 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { storageCar } from '../firebaseLoc';
 import { ref as refCar, listAll, getDownloadURL } from 'firebase/storage';
 import videoF from '../fotos/veureVideo.jpg';
+import Benrera from '../JMGlobal/Benrera';
 
 function Pantalla05() {
   const navigate = useNavigate();
@@ -24,43 +25,6 @@ function Pantalla05() {
   const c03 = localStorage.getItem('Proces012');  
   const c99 = localStorage.getItem('Proces025');
 
-  /* Bloquejar el botó "enrere" del mòbil
-  useEffect(() => {
-    const anularReturn = (event) => {
-      event.preventDefault();
-      if (window.history.state && window.history.state.preventExit) {
-        navigate(0);
-      }
-    };
-    window.history.pushState({ preventExit: true }, '');
-    window.addEventListener('popstate', anularReturn);
-    return () => {
-      window.removeEventListener('popstate', anularReturn);
-      window.history.replaceState(null, '');
-    };
-  }, [navigate]);
-   */
-  // ----- fer que el butó < en mòbil faci el mateix que  enrere ----
-   useEffect(() => {
-      const handler = (event) => {
-        event.preventDefault();
-        navigate(0);
-      };
-      window.history.pushState({ preventExit: true }, '');
-      window.addEventListener('popstate', handler);
-  
-      const keyDownHandler = (event) => {
-         if(event.key === 'Backspace') {
-          event.preventDefault();
-          Sacabat();
-         }
-      };
-       window.addEventListener('keydown',keyDownHandler);
-      return () => {
-        window.removeEventListener('popstate', handler);
-        window.removeEventListener('keydown', keyDownHandler);
-      };
-    }, [navigate]);
   // Llegir fitxers de Firebase Storage
 useEffect(() => {
   const fetchElements = async () => {
@@ -113,7 +77,7 @@ useEffect(() => {
     localStorage.setItem('Programa', '/Pantalla03');
     navigate('/Pantalla03');
   }
-
+  Benrera(Sacabat);
   return (
     <>
       <div className="P5center-contentP5">

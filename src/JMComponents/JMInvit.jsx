@@ -5,6 +5,7 @@ import { collection, getDocs, doc,
          updateDoc, deleteDoc, addDoc, limit, query, orderBy} from 'firebase/firestore';
 import "./Global.css";
 import { db } from '../firebaseLoc';
+import Benrera from '../JMGlobal/Benrera';  
 
 function JMInvit() {
   const navigate = useNavigate();
@@ -186,7 +187,7 @@ const formatDateToDDMMYYYY = (isoDate) => {
     localStorage.setItem('Programa', '/Pantalla02');
     navigate('/Pantalla02');
   }
-
+  Benrera(Sacabat);
   return (
     <>
     <div className="center-contentP2">

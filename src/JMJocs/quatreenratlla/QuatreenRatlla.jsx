@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import "./QuatreenRatlla.css";
 import { Form, Button, Container, Row, Col, Card} from "react-bootstrap";
-import { ref as refCar, listAll, getDownloadURL, uploadBytesResumable } from 'firebase/storage'; 
 import { useNavigate } from 'react-router-dom';
 import logoX from './logojugador.png';
 import logoO from './logowindows.png';
 import logobuit from './logobuit.png';
+import Benrera from "../../JMGlobal/Benrera";
 
 const ROWS = 6;
 const COLS = 6;
@@ -214,9 +214,10 @@ function QuatreenRatlla() {
   }
 
   /* ========= RENDER ========= */
-  const sacabat = () => { 
+  const Sacabat = () => { 
     navigate('/Jocs0');     
-  };     
+  };
+  Benrera(Sacabat);     
   return (
     <div className="game">
       <h1 className='title'>Quatre en ratlla</h1>
@@ -247,7 +248,7 @@ function QuatreenRatlla() {
       <Button className="mb-2" 
                         variant="warning"
                            size='sm'
-                        onClick={sacabat}>                                      
+                        onClick={Sacabat}>                                      
                       Sortir Joc   
       </Button>   
       <Button className="mb-2" 

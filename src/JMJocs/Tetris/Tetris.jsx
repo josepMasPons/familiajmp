@@ -4,6 +4,7 @@ import BoardNext from './BoardNext.js';
 import TetrisInterval from './TetrisInterval';
 import './Tetris.css';
 import { useNavigate } from "react-router-dom";
+import Benrera from '../../JMGlobal/Benrera.js';
 
 function getRandomPiece() {
   
@@ -241,7 +242,7 @@ const Tetris = ({ canviarPantalla }) => {
       )
     );
   };
-
+  Benrera(Sacabat);
   return (
     <div className='TEP01T'>
     

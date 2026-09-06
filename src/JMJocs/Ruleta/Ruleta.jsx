@@ -19,6 +19,8 @@ import f12 from './ImatgesRuleta/tigre.jpg';
 import f13 from './ImatgesRuleta/zebra.jpg';
 import f14 from './ImatgesRuleta/balena.jpg';
 import f15 from './ImatgesRuleta/tortuga.jpg';
+import Benrera from "../../JMGlobal/Benrera";
+
 const LLOCS = [
   'La Sabana',
   'La Selva',
@@ -88,6 +90,7 @@ export default function PantallaJoc() {
    const Sacabat = () => {
     navigate('/Jocs0');
   }
+  Benrera(Sacabat);
   return (
     <div className="casino-bg">
     <div className="casino-wrapper">

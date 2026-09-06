@@ -6,6 +6,7 @@ import { db } from "../firebaseLoc";
 import { collection, getDocs, query, limit } from 'firebase/firestore';
 import { Navbar, Container, Row, Col, Card, Button } from "react-bootstrap";
 import './Visites.css';
+import Benrera from '../JMGlobal/Benrera';
 
 function Visites() {
   const navigate = useNavigate();
@@ -15,22 +16,6 @@ function Visites() {
   const [paraulax, setParaulax] = useState(localStorage.getItem('Proces052') || '');
   const [data, setData] = useState([]);
   const [filaSel, setFilaSel] = useState(null);
-
-  // Evitar sortida amb el botó enrere
-  useEffect(() => {
-    const anularReturn = (event) => {
-      event.preventDefault();
-      if (window.history.state && window.history.state.preventExit) {
-        navigate(0);
-      }
-    };
-    window.history.pushState({ preventExit: true }, '');
-    window.addEventListener('popstate', anularReturn);
-    return () => {
-      window.removeEventListener('popstate', anularReturn);
-      window.history.replaceState(null, '');
-    };
-  }, [navigate]);
 
   // Fetch de dades per mostrar fins a 50 registres
   useEffect(() => {
@@ -64,7 +49,7 @@ function Visites() {
     localStorage.setItem('IniciJMP', 'No');
     navigate('/Pinici');
 }  
-
+Benrera(Sacabat);
  return (
   <>
     <div className="page-wrapperVI">
